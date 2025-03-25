@@ -1,3 +1,48 @@
+:root {
+  --open-sans: 'Open Sans', sans-serif;
+  --nunito-sans: 'Nunito Sans', sans-serif;
+
+  --accent-light: #ffc725;
+  --accent-dark: #f37335;
+  --dark: #443737;
+  --light: #ffffff;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--open-sans);
+}
+
+.logo {
+  display: block;
+  width: 175px;
+  height: 56px;
+  background-image: url(../images/logo.svg);
+  /* Чтобы изображение не дублировалось при смещении: */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 195px;
+}
+
+.nav {
+  flex-grow: 1;
+  display: flex;
+  gap: 46px;
+}
+
+.nav-link {
+  color: var(--dark);
+  text-decoration: none;
 }
