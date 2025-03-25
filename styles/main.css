@@ -12,6 +12,25 @@ body {
   font-family: var(--open-sans);
 }
 
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Шапка сайта */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 195px;
+
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+/* Логотип */
 .logo {
   display: block;
   width: 175px;
@@ -22,23 +41,7 @@ body {
   background-size: contain;
 }
 
-.container {
-  width: 100%;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  gap: 195px;
-
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-
+/* Блок навигации */
 .nav {
   flex-grow: 1;
   display: flex;
@@ -65,6 +68,7 @@ body {
   background-color: var(--accent-light);
 }
 
+/* Корзина с товарами и счётчик */
 .cart {
   color: var(--dark);
   text-decoration: none;
@@ -73,6 +77,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
 
 .cart::before {
@@ -95,4 +100,16 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 17px;
+}
+
+/* Главный баннер на странице */
+.hero {
+  background-image: url(../images/hero-img.jpg);
+  width: 100%;
+  max-width: 1920px;
+  height: 478px;
+  margin: 0 auto;
 }
