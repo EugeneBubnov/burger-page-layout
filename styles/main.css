@@ -505,6 +505,7 @@ a:hover {
   border: 1px solid var(--line);
   padding: 10px 10px;
 }
+
 .footer-phone {
   display: block;
   font-family: var(--nunito-sans);
@@ -515,6 +516,10 @@ a:hover {
   color: var(--accent-light);
   margin-top: 12px;
   transition: var(--tr);
+}
+
+.footer-phone._mobile {
+  display: none;
 }
 
 .footer-phone:hover {
@@ -622,7 +627,7 @@ a:hover {
 
 /* Адаптивы */
 
-@media (min-width: 1080px) {
+@media (width <= 1080px) {
   .nav {
     margin-left: 0;
     gap: min(2vw, 30px);
@@ -633,7 +638,7 @@ a:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (width <= 768px) {
   .nav {
     gap: 22px;
   }
@@ -657,5 +662,46 @@ a:hover {
 
   .menu-header {
     margin-top: 80px;
+  }
+
+  .menu-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-box._additionally {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item._additionally {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .menu-item._additionally .menu-thumb {
+    flex-basis: calc(60%-20px);
+    height: 260px;
+    margin-bottom: 0;
+  }
+
+  .menu-info {
+    flex-basis: 40%;
+  }
+
+  .footer {
+    padding-top: 62px;
+    padding-bottom: 71px;
+  }
+
+  .footer-wrapper {
+    gap: 15px;
+  }
+
+  .footer-item:last-child {
+    display: none;
+  }
+
+  .footer-phone._mobile {
+    display: block;
   }
 }
