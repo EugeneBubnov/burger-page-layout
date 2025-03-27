@@ -121,6 +121,38 @@ a:hover {
   left: 17px;
 }
 
+.button-up {
+  max-width: 80px;
+  font-size: 14px;
+  font-family: var(--nunito-sans);
+  font-weight: 700;
+  padding: 15px 10px;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--dark);
+  background-color: var(--accent-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--tr);
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.button-up:hover {
+  background-color: var(--accent-dark);
+}
+
+.button-up.hidden {
+  opacity: 0;
+}
+
+.button-up.visible {
+  opacity: 1;
+}
+
 /* Главный блок на странице */
 .hero {
   background-image: url(../images/hero-img.jpg);
@@ -240,10 +272,13 @@ a:hover {
 }
 
 .banner-btn {
+  display: block;
+  max-width: 170px;
   font-size: 14px;
   font-family: var(--nunito-sans);
   font-weight: 700;
-  padding: 22px 25px;
+  padding: 22px 0;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--dark);
