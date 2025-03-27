@@ -7,8 +7,9 @@
   --dark: #443737;
   --light: #ffffff;
   --light-rgb: 255, 255, 255;
-
   --line: #dedede;
+
+  --tr: 0.2s;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
 
 a {
   text-decoration: none;
+  transition: var(--tr);
 }
 
 a:hover {
@@ -67,6 +69,7 @@ a:hover {
   color: var(--dark);
   font-weight: 600;
   font-size: 20px;
+  transition: var(--tr);
 }
 
 .nav-link::after {
@@ -144,6 +147,7 @@ a:hover {
 
 .breadcrumbs-link {
   color: rgba(var(--light-rgb), 0.5);
+  transition: var(--tr);
 }
 
 .breadcrumbs-link:hover {
@@ -242,8 +246,8 @@ a:hover {
   background-color: var(--accent-light);
   border: none;
   border-radius: 5px;
-
   cursor: pointer;
+  transition: var(--tr);
 }
 
 .banner-btn:hover {
@@ -360,6 +364,7 @@ a:hover {
   position: relative;
   padding-left: 30px;
   align-self: center;
+  transition: var(--tr);
 }
 
 .menu-btn::before {
@@ -371,4 +376,99 @@ a:hover {
 
 .menu-btn:hover {
   background-color: var(--accent-dark);
+}
+
+/* Подвал сайта */
+.footer {
+  background: #1e2f40;
+  padding-top: 110px;
+  padding-bottom: 120px;
+  margin-top: 140px;
+}
+
+.logo-footer {
+  display: block;
+  background-image: url(../images/logo-light.svg);
+  background-size: contain; /* чтобы изображение полностью умещалось */
+  background-repeat: no-repeat; /* чтобы не повторялось */
+  width: 63px;
+  height: 56px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-family: var(--nunito-sans);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 190%;
+  text-transform: uppercase;
+  color: var(--light);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--open-sans);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  transition: var(--tr);
+}
+
+.footer-link:hover {
+  color: var(--accent-light);
+}
+
+.footer-list {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.footer-list-item {
+  font-family: var(--open-sans);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 160%;
+  color: #fff;
+}
+
+.footer-list-item span {
+  display: block;
+  font-family: var(--open-sans);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: rgba(var(--light-rgb), 0.9);
+}
+
+.footer-list-item:not(:last-child) {
+  padding-bottom: 14px;
+}
+
+.footer-phone {
+  display: block;
+  font-family: var(--nunito-sans);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 190%;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  margin-top: 12px;
+  transition: var(--tr);
+}
+
+.footer-phone:hover {
+  color: var(--accent-dark);
 }
