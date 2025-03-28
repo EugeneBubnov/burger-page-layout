@@ -542,6 +542,12 @@ a:hover {
   cursor: no-drop;
 }
 
+.footer-link._disabled-link {
+  color: lightgrey;
+  cursor: no-drop;
+  text-decoration: line-through;
+}
+
 .nav-link._disabled-link::after {
   display: none;
 }
