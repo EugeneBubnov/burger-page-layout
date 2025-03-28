@@ -537,6 +537,15 @@ a:hover {
   color: var(--accent-dark);
 }
 
+.nav-link._disabled-link {
+  color: lightgrey;
+  cursor: no-drop;
+}
+
+.nav-link._disabled-link::after {
+  display: none;
+}
+
 /* Контакты main */
 .contact-main {
   display: flex;
