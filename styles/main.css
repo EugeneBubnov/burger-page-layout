@@ -877,4 +877,29 @@ a:hover {
   .footer-phone._mobile {
     font-size: 12px;
   }
+
+  /* Contacts */
+  .contact-main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 1057px;
+    margin: 70px 21px 60px;
+  }
+
+  .contact-additionally {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    max-width: 1057px;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .contact-map {
+    flex-basis: 560px;
+    padding-bottom: 50px;
+  }
 }
