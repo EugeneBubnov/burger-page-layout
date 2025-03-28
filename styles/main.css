@@ -89,6 +89,17 @@ a:hover {
   background-color: var(--accent-light);
 }
 
+.burger-menu {
+  background-image: url(../images/burgerMenu.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 34px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
 /* Корзина с товарами и счётчик */
 .cart {
   color: var(--dark);
@@ -625,6 +636,10 @@ a:hover {
   color: var(--accent-light);
 }
 
+.modal {
+  display: none;
+}
+
 /* Адаптивы */
 
 @media (width <= 1080px) {
@@ -703,5 +718,148 @@ a:hover {
 
   .footer-phone._mobile {
     display: block;
+  }
+}
+
+@media (width <= 730px) {
+  .hero {
+    padding-top: 57px;
+    padding-bottom: 55px;
+  }
+
+  .breadcrumbs {
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+    margin-top: 28px;
+    margin-bottom: 13px;
+  }
+
+  .hero-description {
+    font-size: 12px;
+    line-height: 166%;
+  }
+
+  .banner {
+    margin-top: 33px;
+  }
+
+  .banner-wrapper {
+    padding: 36px 15px 30px 15px;
+  }
+
+  .banner-title {
+    margin-bottom: 9px;
+  }
+
+  .banner-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 220px;
+  }
+
+  .banner-btn {
+    max-width: 198px;
+  }
+
+  .menu-header {
+    margin-top: 58px;
+    background-position: 93% center;
+    margin-bottom: 30px;
+  }
+  .menu-title {
+    font-size: 27px;
+  }
+
+  .menu-name {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .menu-price {
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+
+  .menu-thumb {
+    margin-bottom: 10px;
+    height: 50vw;
+  }
+
+  .menu-item.menu-box._additionally .menu-thumb {
+    height: 30vw;
+  }
+
+  .selection-sort {
+    font-size: 12px;
+    flex-basis: 136px;
+  }
+
+  .menu-box {
+    gap: 24px 20px;
+  }
+
+  .header-wrapper {
+    gap: 21px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  .logo {
+    width: 116px;
+    height: 37px;
+    flex-grow: 1;
+  }
+  .nav {
+    display: none;
+    text-align: center;
+  }
+
+  .nav._modal {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .modal {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff8dc;
+    padding: 40px 15px;
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0 auto;
+    top: -400px;
+    left: 0;
+    right: 0;
+    transition: var(--tr);
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .modal-close {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/closeModalBtn.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .footer-phone._mobile {
+    font-size: 12px;
   }
 }

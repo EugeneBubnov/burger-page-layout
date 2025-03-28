@@ -18,6 +18,7 @@
     <header class="header">
       <div class="container">
         <div class="header-wrapper">
+          <button class="burger-menu" onclick="openModal()"></button>
           <div class="logo"></div>
           <nav class="nav">
             <a href="#" class="nav-link">Главная</a>
@@ -152,5 +153,15 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="modal">
+      <nav class="nav _modal">
+        <a href="#" class="nav-link">Главная</a>
+        <a href="/index.html" class="nav-link">Меню</a>
+        <a href="#" class="nav-link">О&nbsp;нас</a>
+        <a href="contact.html" class="nav-link">Контакты</a>
+      </nav>
+      <button class="modal-close" onclick="closeModal()"></button>
+    </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
